@@ -29,4 +29,4 @@ class Account():
     
 
     @abstractmethod
-    def widthdraw(self, amount: float, remarks: str ="widthdrawl") -> None:
+    def widthdraw(self, amount: float, remarks: str ="widthdrawl"):
