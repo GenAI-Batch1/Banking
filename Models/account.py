@@ -30,3 +30,4 @@ class Account():
 
     @abstractmethod
     def widthdraw(self, amount: float, remarks: str ="widthdrawl"):
+        pass
