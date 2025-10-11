@@ -1,0 +1,13 @@
+install mysqlworkbench. mysql server
+
+check how to create a table
+inssert data into the table
+retrieve data from the table
+
+
+use genai;
+create table student (studentid INT, name varchar(20),email varchar(30), physics INT,maths INT)
+
+select * from student
+
+insert into student (studentid,name,email,physics,maths) values (123,'Ajay', 'ajay@gmail.com',25,26)
