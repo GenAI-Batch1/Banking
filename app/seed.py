@@ -1,5 +1,5 @@
-from banking.models.savings import SavingsAccount
-from banking.models.current import CurrentAccount
+from ..models.savings import SavingsAccount
+from ..models.current import CurrentAccount
 
 def create_accounts():
     acc1=SavingsAccount("Ravi","sa-001","12345678",105.10)

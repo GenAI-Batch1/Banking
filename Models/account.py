@@ -25,7 +25,7 @@ class Account():
         self._account_transactions.append({"type":"Deposit", "amount": amount, "remarks": remarks})
         
     def mini_statement(self, last_n : int=5) -> List[Dict]:
-        return self._account_transactions[-1:-last_n]
+        return self._account_transactions[-last_n::]
     
 
     @abstractmethod

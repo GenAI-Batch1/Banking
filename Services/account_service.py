@@ -1,4 +1,4 @@
-from banking.models.account import Account
+from ..models.account import Account
 
 from typing import Dict,Optional
 
@@ -13,7 +13,7 @@ class AccountService:
         self._store: Dict[str,Account] ={}
 
     def add_account(self, account : Account) -> None:
-        self._store[account._acount_number] = account
+        self._store[account._account_number] = account
 
     def get_account(self,account_number):
         return self._store.get(account_number)

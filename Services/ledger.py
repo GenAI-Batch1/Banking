@@ -3,7 +3,7 @@ amount transfer
 print statement on passbook
 '''
 
-from banking.models.account import Account
+from ..models.account import Account
 
 class LedgerService:
 
@@ -19,7 +19,7 @@ class LedgerService:
         #print stament
         #print current balance
         for tran in account.mini_statement(last_n):
-            print(tran)
+            
             print(f"{tran['type']} -- {tran['amount']}  -- {tran['remarks']}")
 
         print(f"Closing balance is : {account.get_balance()}")

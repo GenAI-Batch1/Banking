@@ -1,6 +1,7 @@
-from banking.services.account_service import AccountService
-from banking.app.seed import create_accounts
-from banking.services.ledger import LedgerService
+from ..services.account_service import AccountService
+from ..app.seed import create_accounts
+from ..services.ledger import LedgerService
+
 
 def run_demo():
     acc_service = AccountService() 
@@ -19,7 +20,7 @@ def run_demo():
 
     LedgerService.amount_transfer(a1,a2,10)
 
-    LedgerService.print_statement(a1,3)
+    #LedgerService.print_statement(a1,3)
     LedgerService.print_statement(a2,5)
 
 
