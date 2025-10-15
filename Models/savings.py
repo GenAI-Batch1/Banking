@@ -2,7 +2,7 @@ from .account import Account
 
 class SavingsAccount(Account):
 
-    def widthdraw(self, amount, remarks = "widthdrawl") :
+    def widthdraw(self, amount: int, remarks = "widthdrawl") :
         account_balance = self.get_balance()
         if(account_balance > amount):
             new_balance = account_balance - amount

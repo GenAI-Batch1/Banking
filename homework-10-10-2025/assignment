@@ -11,3 +11,19 @@ create table student (studentid INT, name varchar(20),email varchar(30), physics
 select * from student
 
 insert into student (studentid,name,email,physics,maths) values (123,'Ajay', 'ajay@gmail.com',25,26)
+
+
+use genai;
+create table student (studentid INT, name varchar(20),email varchar(30), physics INT,maths INT)
+
+select * from genai.student;
+
+select * from genai.student where studentid>=127;
+
+insert into genai.student (studentid,name,email,physics,maths) values 
+		(124,'vijay', 'vijay@gmail.com',28,29),
+        (125,'kiran', 'kiran@gmail.com',28,29),
+        (127,'ravi', 'ravi@gmail.com',28,29),
+        (128,'sneha', 'sneha@gmail.com',28,29),
+        (129,'Rahul', 'Rahul@gmail.com',28,29),
+        (130,'roja', 'roja@gmail.com',28,29)

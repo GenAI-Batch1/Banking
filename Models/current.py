@@ -1,7 +1,9 @@
 from .account import Account
+import config
+
 
 class CurrentAccount(Account):
-    Transaction_Fee=50
+    Transaction_Fee=config.transaction_fee
 
     def widthdraw(self, amount : float, remarks = "widthdrawl") :
         account_balance=self.get_balance()
