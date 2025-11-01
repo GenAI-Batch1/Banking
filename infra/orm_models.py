@@ -10,7 +10,6 @@ class AccountORM(Base):
     holder_name: Mapped[str] =mapped_column(String(50))
     type: Mapped[str] = mapped_column(String(20)) #savings, current
     balance: Mapped[float] =mapped_column(Float,default=0.0)
-   
 
     transactions : Mapped[list["TransactionORM"]]= relationship("TransactionORM",back_populates="accounts")
 

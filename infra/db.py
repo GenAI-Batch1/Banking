@@ -14,5 +14,5 @@ class Base(DeclarativeBase):
     pass
 
 def init_db():
-    from orm_models import *
+    from orm_models import AccountORM, TransactionORM
     Base.metadata.create_all(bind=engine)
